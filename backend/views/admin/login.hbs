@@ -1,0 +1,14 @@
+<div class="containerlogin" style="padding-top:80px; width:80%; margin:auto; height:478px;">
+
+    <form action="/admin/login" method='post'>
+        <div class="input-group">
+            <span class="input-group-text">Usuario y Contraseña</span>
+            <input type="text" aria-label="Usuario" class="form-control" name="usuario" id="usuario">
+            <input type="text" aria-label="Contraseña" class="form-control" name="password" id="password">
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top:20px;">Enviar</button>
+    </form>
+    {{#if error}}
+        <p style="padding-top:10px; color:red">Usuario o contraseña incorrecta</p>{{/if}}
+
+</div>
