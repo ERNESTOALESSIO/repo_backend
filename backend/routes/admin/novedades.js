@@ -32,7 +32,7 @@ router.get('/', async function (req, res, next) {
 
     res.render('admin/novedades', {
         layout: 'admin/layout',
-        //persona: req.session.nombre,
+        persona: req.session.nombre,
         novedades
     });
 });

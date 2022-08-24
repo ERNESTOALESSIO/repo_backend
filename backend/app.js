@@ -30,8 +30,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/admin/novedades', adminRouter);//es la ruta de novedades agregada
-app.use('/api', cors(),apiRouter);
+//app.use('/admin/novedades', adminRouter);//es la ruta de novedades agregada
+//app.use('/api', cors(),apiRouter);
 
 
 app.use(session({
